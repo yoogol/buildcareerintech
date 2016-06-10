@@ -118,7 +118,7 @@ var meetUpLocation = function(searchTerm) {
 
 var callMeetUpCoord = function(myLat, myLon, searchTerm) {
   $.ajax({
-    url: 'https://api.meetup.com/2/open_events.json?text=' + searchTerm + '&lat=' + myLat + '&lon=' + myLon + '&time=,1w&category=34&key=' + meetUpAPI,
+    url: 'https://api.meetup.com/2/open_events.json?text=' + searchTerm + '&lat=' + myLat + '&lon=' + myLon + '&time=,1w&category=34&key=' + process.env.meetUpAPI,
     dataType: 'jsonp'
   }).done(function(meetUpResult) {
     displayMeetUpResult(meetUpResult.results, searchTerm);
@@ -129,7 +129,7 @@ var callMeetUpCoord = function(myLat, myLon, searchTerm) {
 
 var callMeetUpZip = function(zip, searchTerm) {
   $.ajax({
-    url: 'https://api.meetup.com/2/open_events.json?text=' + searchTerm + '&zip=' + zip + '&time=,1w&limited_events=true&category=34&key=' + meetUpAPI,
+    url: 'https://api.meetup.com/2/open_events.json?text=' + searchTerm + '&zip=' + zip + '&time=,1w&limited_events=true&category=34&key=' + process.env.meetUpAPI,
     dataType: 'jsonp'
   }).done(function(meetUpResult) {
     displayMeetUpResult(meetUpResult.results, searchTerm);
