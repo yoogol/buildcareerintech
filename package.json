@@ -1,0 +1,23 @@
+{
+  "name": "project-two",
+  "version": "1.0.0",
+  "description": "Hello, welcome to the README file of a career development site created as part of a study project at General Assemby's WDI course.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoogol/project-two.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoogol/project-two/issues"
+  },
+  "homepage": "https://github.com/yoogol/project-two#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
